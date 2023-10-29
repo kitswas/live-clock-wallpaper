@@ -1,26 +1,37 @@
 {
-  "apiInput": {
-    "text": "API Key",
-    "type": "textbox",
-    "value": "openweathermap.org key"
+  "xPos": {
+    "max": 100,
+    "min": 0,
+    "text": "Position X (Percentage)",
+    "type": "slider",
+    "value": 25
   },
-   "cityInput": {
-    "text": "Location",
-    "type": "textbox",
-    "value": "city, country"
+  "yPos": {
+    "max": 100,
+    "min": 0,
+    "text": "Position Y (Percentage)",
+    "type": "slider",
+    "value": 0
   },
-   "unit": {
-    "type": "dropdown",
-    "value": 0,
-    "text": "Unit",
-    "items": [
-      "Metric",
-      "Imperial",
-    ]
+  "overlayColor": {
+    "text": "Overlay Screen Color",
+    "type": "color",
+    "value": "#000000"
   },
-  "btnRefresh" : {
-	"text" : "Click to Update Weather",
-	"type" : "button",
-	"value" : "Refresh"
-	}
+  "overlayOpacity": {
+    "max": 100,
+    "min": 0,
+    "step": 5,
+    "text": "Overlay Opacity (Percentage)",
+    "help": "0 is transparent, 100 is opaque.",
+    "type": "slider",
+    "value": 100
+  },
+  "mediaSelect": {
+    "type": "folderDropdown",
+    "value": "Wallpaper.jpg",
+    "text": "Background (.jpg, .png, .webp)",
+    "filter": "*.jpg|*.jpeg|*.png|*.webp",
+    "folder": "media"
+  }
 }
