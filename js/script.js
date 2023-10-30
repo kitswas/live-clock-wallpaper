@@ -6,7 +6,6 @@ var mmddyy = true;
 let clockEl = document.querySelector("#clock");
 let timeEl = document.querySelector(".time");
 let dateEl = document.querySelector(".date");
-// clockEl.style.marginTop = `${timeEl.offsetHeight}px`;
 
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
@@ -63,17 +62,6 @@ function livelyPropertyListener(name, val) {
 			break;
 		case "mediaSelect":
 			backgroundElement.style.backgroundImage = `url("${val.replace("\\", "/")}")`;
-			// console.log(val);
-			// console.log(backgroundElement.style.backgroundImage);
 			break;
 	}
-}
-
-//helpers
-function getExtension(filePath) {
-	return filePath.substring(filePath.lastIndexOf(".") + 1, filePath.length).toLowerCase() || filePath;
-}
-
-function getFileName(filePath) {
-	return filePath.substring(filePath.lastIndexOf("/") + 1, filePath.length).toLowerCase() || filePath;
 }
