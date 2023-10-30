@@ -1,20 +1,10 @@
+# Simple live clock wallpaper
 
-## Weather Fetch Demo
-Sample webpage wallpaper project that fetches current & forecast weather data from Openweathermap.
+This is a simple live clock wallpaper for [Lively Wallpaper](https://github.com/rocksdanister/lively).  
+It shows the current time and date above a customizable background image.
 
-Sample project for [Lively Wallpaper.](https://github.com/rocksdanister/lively)
+## Usage
 
-## Download
-[Download](https://github.com/rocksdanister/weather-fetch-wallpaper/releases/download/v1/weather_demo.zip)
+[Download](https://github.com/kitswas/live-clock-wallpaper/releases/download/v0.1/weather-fetch-wallpaper.zip)
 
 Drag & drop the file into Lively window to install.
-
-## Setup
-
- 1. Create an account in [http://openweathermap.org/](http://openweathermap.org/)
- 2. Generate an api key.
- 3. Enter the key & city after opening Customise menu in Lively.
- 4. Hit Refresh, api key might take some time to activate so if you get error try after sometime.
- 5. Done!
-
-Play around with the code by looking at showCurrentWeather() and showForecastWeather() functions in js/script.js file.
