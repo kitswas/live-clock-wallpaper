@@ -62,8 +62,9 @@ function livelyPropertyListener(name, val) {
 			overlayElement.style.opacity = `${val}%`;
 			break;
 		case "mediaSelect":
-			backgroundElement.style.backgroundImage = val;
-			console.log(val);
+			backgroundElement.style.backgroundImage = `url("${val.replace("\\", "/")}")`;
+			// console.log(val);
+			// console.log(backgroundElement.style.backgroundImage);
 			break;
 	}
 }
@@ -71,4 +72,8 @@ function livelyPropertyListener(name, val) {
 //helpers
 function getExtension(filePath) {
 	return filePath.substring(filePath.lastIndexOf(".") + 1, filePath.length).toLowerCase() || filePath;
+}
+
+function getFileName(filePath) {
+	return filePath.substring(filePath.lastIndexOf("/") + 1, filePath.length).toLowerCase() || filePath;
 }
