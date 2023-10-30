@@ -45,6 +45,7 @@ const imageExtensions = ["jpg", "jpeg", "png", "webp"];
 
 let backgroundElement = document.querySelector("#background");
 let overlayElement = document.querySelector(".overlay");
+let clockElement = document.querySelector("#clock");
 
 function livelyPropertyListener(name, val) {
 	switch (name) {
@@ -53,6 +54,9 @@ function livelyPropertyListener(name, val) {
 			break;
 		case "yPos":
 			overlayElement.style.top = `${val}%`;
+			break;
+		case "clockColor":
+			clockElement.style.color = val;
 			break;
 		case "overlayColor":
 			overlayElement.style.backgroundColor = `${val}33`; // 20% opacity

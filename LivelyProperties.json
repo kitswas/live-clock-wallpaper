@@ -13,6 +13,11 @@
     "type": "slider",
     "value": 0
   },
+  "clockColor": {
+    "text": "Clock Font Color",
+    "type": "color",
+    "value": "#dcddde"
+  },
   "overlayColor": {
     "text": "Overlay Screen Color",
     "type": "color",
